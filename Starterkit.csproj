@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -7,51 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\assets\media\misc\layout\aside-calendar.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\aside-courier-activity.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\aside-filters.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\aside-segments.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\aside-shipment-history.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\customizer-header-bg.jpg" />
-    <Content Remove="wwwroot\assets\media\misc\layout\dark-header.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\dark-sidebar.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\demo1-dark.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\demo1-light.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\demo23-dark.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\demo23-light.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\light-header.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\light-sidebar.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\toolbar-accounting.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\toolbar-classic.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\toolbar-extended.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\toolbar-reports.png" />
-    <Content Remove="wwwroot\assets\media\misc\layout\toolbar-saas.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.20" />
   </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\assets\media\misc\layout\aside-calendar.png" />
-    <None Include="wwwroot\assets\media\misc\layout\aside-courier-activity.png" />
-    <None Include="wwwroot\assets\media\misc\layout\aside-filters.png" />
-    <None Include="wwwroot\assets\media\misc\layout\aside-segments.png" />
-    <None Include="wwwroot\assets\media\misc\layout\aside-shipment-history.png" />
-    <None Include="wwwroot\assets\media\misc\layout\customizer-header-bg.jpg" />
-    <None Include="wwwroot\assets\media\misc\layout\dark-header.png" />
-    <None Include="wwwroot\assets\media\misc\layout\dark-sidebar.png" />
-    <None Include="wwwroot\assets\media\misc\layout\demo1-dark.png" />
-    <None Include="wwwroot\assets\media\misc\layout\demo1-light.png" />
-    <None Include="wwwroot\assets\media\misc\layout\demo23-dark.png" />
-    <None Include="wwwroot\assets\media\misc\layout\demo23-light.png" />
-    <None Include="wwwroot\assets\media\misc\layout\light-header.png" />
-    <None Include="wwwroot\assets\media\misc\layout\light-sidebar.png" />
-    <None Include="wwwroot\assets\media\misc\layout\toolbar-accounting.png" />
-    <None Include="wwwroot\assets\media\misc\layout\toolbar-classic.png" />
-    <None Include="wwwroot\assets\media\misc\layout\toolbar-extended.png" />
-    <None Include="wwwroot\assets\media\misc\layout\toolbar-reports.png" />
-    <None Include="wwwroot\assets\media\misc\layout\toolbar-saas.png" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<Content Include="wwwroot\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
 </Project>
