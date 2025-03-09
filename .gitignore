@@ -9,3 +9,5 @@
 /_keenthemes/tools/node_modules/.bin
 /_keenthemes/tools
 /Theme/demo1/metronic_html_v8.2.0_demo1
+/bin/Release/net7.0
+/Properties/PublishProfiles
