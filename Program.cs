@@ -4,7 +4,7 @@ using Starterkit._keenthemes.libs;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+var mvcBuilder = builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IKTTheme, KTTheme>();
 builder.Services.AddSingleton<IKTBootstrapBase, KTBootstrapBase>();
@@ -20,6 +20,12 @@ IConfiguration iconsConfiguration = new ConfigurationBuilder()
 KTThemeSettings.init(themeConfiguration);
 KTIconsSettings.init(iconsConfiguration);
 
+// Thêm Razor Runtime Compilation
+if (builder.Environment.IsDevelopment())
+{
+    mvcBuilder.AddRazorRuntimeCompilation();
+}
+    
 var app = builder.Build();
 
 app.Use(async (context, next) =>

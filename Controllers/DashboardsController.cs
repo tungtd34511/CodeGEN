@@ -14,7 +14,6 @@ public class DashboardsController : Controller
         _theme = theme;
     }
 
-    [HttpGet("/")]
     [HttpGet("/dashboards")]
     public IActionResult Index()
     {
