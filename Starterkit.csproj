@@ -7,6 +7,55 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CodeBasic\Controllers\**" />
+    <Compile Remove="CodeBasic\Models\**" />
+    <Compile Remove="CodeBasic\Properties\**" />
+    <Compile Remove="CodeBasic\Resources\**" />
+    <Compile Remove="CodeBasic\Views\**" />
+    <Compile Remove="CodeBasic\wwwroot\**" />
+    <Compile Remove="CodeBasic\_keenthemes\**" />
+    <Content Remove="CodeBasic\Controllers\**" />
+    <Content Remove="CodeBasic\Models\**" />
+    <Content Remove="CodeBasic\Properties\**" />
+    <Content Remove="CodeBasic\Resources\**" />
+    <Content Remove="CodeBasic\Views\**" />
+    <Content Remove="CodeBasic\wwwroot\**" />
+    <Content Remove="CodeBasic\_keenthemes\**" />
+    <EmbeddedResource Remove="CodeBasic\Controllers\**" />
+    <EmbeddedResource Remove="CodeBasic\Models\**" />
+    <EmbeddedResource Remove="CodeBasic\Properties\**" />
+    <EmbeddedResource Remove="CodeBasic\Resources\**" />
+    <EmbeddedResource Remove="CodeBasic\Views\**" />
+    <EmbeddedResource Remove="CodeBasic\wwwroot\**" />
+    <EmbeddedResource Remove="CodeBasic\_keenthemes\**" />
+    <None Remove="CodeBasic\Controllers\**" />
+    <None Remove="CodeBasic\Models\**" />
+    <None Remove="CodeBasic\Properties\**" />
+    <None Remove="CodeBasic\Resources\**" />
+    <None Remove="CodeBasic\Views\**" />
+    <None Remove="CodeBasic\wwwroot\**" />
+    <None Remove="CodeBasic\_keenthemes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="CodeBasic\Program.cs" />
+    <Compile Remove="CodeBasic\ThemeMiddleware.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="CodeBasic\appsettings.Development.json" />
+    <Content Remove="CodeBasic\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="CodeBasic\.gitignore" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CodeBasic\" />
   </ItemGroup>
 </Project>
